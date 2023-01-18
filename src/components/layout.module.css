@@ -1,3 +1,4 @@
+
 .container { 
     margin: auto;
     max-width: 500px;
@@ -5,7 +6,7 @@
 }
 
 .heading {
-    color: rebeccapurple;
+    color: #3250D2;
   }
 .nav-links {
 display: flex;
@@ -14,9 +15,17 @@ padding-left: 0;
 }
 .nav-link-item {
 padding-right: 2rem;
+
 }
 .nav-link-text {
 color: black;
+text-decoration: none;
+transition: all 0.4s
+
+}
+.nav-link-text:hover{
+  color: grey
+  
 }
 .site-title {
     font-size: 3rem;
@@ -24,3 +33,17 @@ color: black;
     font-weight: 700;
     margin: 3rem 0;
   }
+
+#horizontalunderLine {
+  position: absolute;
+  width: 0;
+  background-color: pink;
+  top: 0;
+  left: 0;
+  height: 10px;
+  border-radius: 3px;
+  transition: 0.5s;
+
+}
+
+

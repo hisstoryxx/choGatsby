@@ -6,8 +6,11 @@ import {
     navLinks,
     navLinkItem,
     navLinkText,
-    siteTitle
+    siteTitle,
+    horizontalunderLine
   } from './layout.module.css'
+  
+
 
 const Layout = ({ pageTitle, children }) => {
 
@@ -21,26 +24,44 @@ const Layout = ({ pageTitle, children }) => {
     }`
 
     )
+
+    
+
+
   return (
+
+    
     <div className = {container}>
+      
         <header className = {siteTitle}>{data.site.siteMetadata.title}</header>
       <nav>
         <ul className={navLinks}>
+          <div id = {horizontalunderLine}> </div>
           <li className={navLinkItem}>
+            
               <Link 
+                
                 to="/" 
                 className = {navLinkText}>
                 Home
                 </Link>
+              
             </li>
           <li className={navLinkItem}>
-              <Link to="/about">
-                  About</Link></li>
+              <Link 
+              
+              to="/about" 
+                className= {navLinkText}>
+                  About
+                  </Link></li>
           <li className={navLinkItem}>
-            <Link to="/blog" className={navLinkText}>
+            <Link 
+            
+            to="/blog" className={navLinkText}>
               Blog
             </Link>
           </li>
+          
         </ul>
       </nav>
       <main>
