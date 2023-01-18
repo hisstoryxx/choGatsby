@@ -28,6 +28,7 @@ module.exports = {
     },
     "gatsby-plugin-mdx",
     "gatsby-transformer-sharp",
-    "gatsby-plugin-sitemap"
+    "gatsby-plugin-sitemap",
+    "gatsby-plugin-netlify"
   ],
 }
