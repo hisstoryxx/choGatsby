@@ -1,8 +1,8 @@
 {
-  "name": "cho-gatsby",
+  "name": "cho",
   "version": "1.0.0",
   "private": true,
-  "description": "cho-gatsby",
+  "description": "최초로 블로그",
   "author": "cho",
   "engines": {
     "node": "18.x"
