@@ -12,6 +12,7 @@ const IndexPage = ({data}) => {
     <Layout pageTitle="Home Page">
 
       <p>안녕하세요 최초로 입니다</p>
+      <p>은별이를 사랑하죠</p>
 
       <StaticImage
         alt="ditto"
