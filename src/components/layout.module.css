@@ -6,7 +6,7 @@
 }
 
 .heading {
-    color: #3250D2;
+   color:darkorange
   }
 .nav-links {
 display: flex;
@@ -24,12 +24,13 @@ transition: all 0.4s
 
 }
 .nav-link-text:hover{
-  color: grey
+  color: pink
   
 }
 .site-title {
     font-size: 3rem;
-    color: gray;
+    
+    color: #ffffff;
     font-weight: 700;
     margin: 3rem 0;
   }

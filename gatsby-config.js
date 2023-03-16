@@ -3,7 +3,7 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `hisstoryxx`,
+    title: `constlove`,
     siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [
@@ -12,6 +12,12 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
+        fonts: [
+          `Nanum+Pen+Script`,
+          `Sing+Day`,
+          `limelight`,
+          `source sans pro\:300,400,400i,700` // you can also specify font weights and styles
+        ],
         name: `blog`,
         path: `${__dirname}/blog`,
       }

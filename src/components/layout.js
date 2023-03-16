@@ -34,7 +34,7 @@ const Layout = ({ pageTitle, children }) => {
     <div className = {container}>
       
         <header className = {siteTitle}>{data.site.siteMetadata.title}</header>
-      <nav>
+      {/* <nav>
         <ul className={navLinks}>
           <div id = {horizontalunderLine}> </div>
           <li className={navLinkItem}>
@@ -63,9 +63,10 @@ const Layout = ({ pageTitle, children }) => {
           </li>
           
         </ul>
-      </nav>
+      </nav> */}
       <main>
         <h1 className={heading}>{pageTitle}</h1>
+        
         {children}
       </main>
     </div>
