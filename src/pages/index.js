@@ -44,7 +44,7 @@ const IndexPage = ({data}) => {
         src="../images/love.jpeg"
       /> */}
       
-      <Confetti/>
+     
       
       <div className={card}>
         <div className={outside}>

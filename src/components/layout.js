@@ -10,7 +10,7 @@ import {
     horizontalunderLine
   } from './layout.module.css'
   
-
+import Confetti from './Confetti'
 
 const Layout = ({ pageTitle, children }) => {
 
@@ -32,7 +32,7 @@ const Layout = ({ pageTitle, children }) => {
 
     
     <div className = {container}>
-      
+       <Confetti/>
         <header className = {siteTitle}>{data.site.siteMetadata.title}</header>
       {/* <nav>
         <ul className={navLinks}>
