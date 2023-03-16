@@ -21,11 +21,11 @@ const Confetti = ({ pageTitle, children }) => {
     }    
 
     useEffect(() => {
-        if (typeof window !== 'undefined') {
-        window.addEventListener('resize', detectSize);
+        
+        typeof window !== 'undefined' &&  window.addEventListener('resize', detectSize);
         return () => {
-            window.removeEventListener('resize', detectSize);
-        }
+            typeof window !== 'undefined' && window.removeEventListener('resize', detectSize);
+        
     }
     },[windowDimension]);
 
