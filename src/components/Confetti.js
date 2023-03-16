@@ -7,33 +7,37 @@ import {cele} from './layout.module.css'
 
 const Confetti = ({ pageTitle, children }) => {
 
+    if (typeof window === `undefined`) {
+        return(<></>);
+    }
+    
+
     
     
 
    const [windowDimension, setDimension] = useState({
        
-    width:  typeof window !== 'undefined' &&  window.innerWidth , height: typeof window !== 'undefined' &&  window.innerHeight});
+    width: window.innerWidth , height:  window.innerHeight});
     
     const detectSize = () => {
         
-        setDimension({width: typeof window !== 'undefined' &&  window.innerWidth, height: typeof window !== 'undefined' &&  window.innerHeight});
+        setDimension({width:  window.innerWidth, height: window.innerHeight});
         
     }    
 
     useEffect(() => {
         
-        typeof window !== 'undefined' &&  window.addEventListener('resize', detectSize);
+        window.addEventListener('resize', detectSize);
         return () => {
-            typeof window !== 'undefined' && window.removeEventListener('resize', detectSize);
+         window.removeEventListener('resize', detectSize);
         
     }
     },[windowDimension]);
 
 
-  return (
-
-    
+  return (    
     < >
+    
       <ReactConfetti
         width={windowDimension.width}
         height = {windowDimension.height}
