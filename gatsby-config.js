@@ -22,6 +22,15 @@ module.exports = {
         path: `${__dirname}/blog`,
       }
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Nanum+Pen+Script\:100,300,400,500,700,900`
+          ],
+        display: "swap",
+      },
+    },
     "gatsby-plugin-mdx",
     "gatsby-transformer-sharp"
   ],
