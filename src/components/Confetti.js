@@ -33,10 +33,8 @@ const Confetti = ({ pageTitle, children }) => {
   return (
 
     
-    <div >
+    <div  >
       <ReactConfetti
-        width={windowDimension.width}
-        height = {windowDimension.height}
         tweenDuration={1000}
       />
     
