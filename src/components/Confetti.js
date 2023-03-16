@@ -6,7 +6,7 @@ import {cele} from './layout.module.css'
 
 
 const Confetti = ({ pageTitle, children }) => {
-
+    // !! 하 그냥 이거 하면돼
     if (typeof window === `undefined`) {
         return(<></>);
     }
