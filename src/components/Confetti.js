@@ -15,9 +15,9 @@ const Confetti = ({ pageTitle, children }) => {
     width:  typeof window !== 'undefined' &&  window.innerWidth , height: typeof window !== 'undefined' &&  window.innerHeight});
     
     const detectSize = () => {
-        if (typeof window !== 'undefined') {
-        setDimension({width: window.innerWidth, height: window.innerHeight});
-        }
+        
+        setDimension({width: typeof window !== 'undefined' &&  window.innerWidth, height: typeof window !== 'undefined' &&  window.innerHeight});
+        
     }    
 
     useEffect(() => {
