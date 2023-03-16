@@ -7,20 +7,26 @@ import {cele} from './layout.module.css'
 
 const Confetti = ({ pageTitle, children }) => {
 
-    if(typeof window !== 'undefined'){
-    }
+    
+    
 
-   const [windowDimension, setDimension] = useState({width: window.innerWidth, height: window.innerHeight});
-
+   const [windowDimension, setDimension] = useState({
+       
+    width:  typeof window !== 'undefined' &&  window.innerWidth , height: typeof window !== 'undefined' &&  window.innerHeight});
+    
     const detectSize = () => {
+        if (typeof window !== 'undefined') {
         setDimension({width: window.innerWidth, height: window.innerHeight});
+        }
     }    
 
     useEffect(() => {
+        if (typeof window !== 'undefined') {
         window.addEventListener('resize', detectSize);
         return () => {
             window.removeEventListener('resize', detectSize);
         }
+    }
     },[windowDimension]);
 
 
