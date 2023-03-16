@@ -4,18 +4,18 @@ import ReactConfetti from 'react-confetti';
 
 const Confetti = ({ pageTitle, children }) => {
 
-   const [windowDimension, setDimension] = useState({width: window.innerWidth, height: window.innerHeight});
+//    const [windowDimension, setDimension] = useState({width: window.innerWidth, height: window.innerHeight});
 
-    const detectSize = () => {
-        setDimension({width: window.innerWidth, height: window.innerHeight});
-    }    
+//     const detectSize = () => {
+//         setDimension({width: window.innerWidth, height: window.innerHeight});
+//     }    
 
-    useEffect(() => {
-        window.addEventListener('resize', detectSize);
-        return () => {
-            window.removeEventListener('resize', detectSize);
-        }
-    },[windowDimension]);
+//     useEffect(() => {
+//         window.addEventListener('resize', detectSize);
+//         return () => {
+//             window.removeEventListener('resize', detectSize);
+//         }
+//     },[windowDimension]);
 
 
   return (
@@ -23,8 +23,8 @@ const Confetti = ({ pageTitle, children }) => {
     
     <div >
       <ReactConfetti
-        width={windowDimension.width}
-        height = {windowDimension.height}
+        // width={windowDimension.width}
+        // height = {windowDimension.height}
         tweenDuration={1000}
       />
     
