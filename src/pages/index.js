@@ -66,7 +66,7 @@ const IndexPage = ({data}) => {
             <div className={imageU}>
           <StaticImage
         alt="ditto"
-        src="../images/silver2.jpeg"
+        src="../images/love.jpeg"
         width="100%"
         height="100%"
         objectFit="contain"
