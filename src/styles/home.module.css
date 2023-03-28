@@ -21,7 +21,10 @@ body {
     display: flex;
    
 }
-
+.inputs{
+    display:flex;
+    z-index: 1000;
+}
 .heart{
     display: flex;
     font-size: 30px;
