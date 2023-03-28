@@ -44,7 +44,7 @@ const IndexPage = ({data}) => {
     console.log(check)
   }
   return (
-    <Layout pageTitle="">
+    <Layout pageTitle="" check={check}>
       <h1></h1>
       <div className={titleContainer}>
         
@@ -81,7 +81,7 @@ const IndexPage = ({data}) => {
           <StaticImage
         alt="ditto"
         src="../images/love.jpeg"
-        width="100%"
+        width="100%" 
         height="100%"
         objectFit="contain"
         

@@ -12,7 +12,7 @@ import {
   
 import Confetti from './Confetti'
 
-const Layout = ({ pageTitle, children }) => {
+const Layout = ({ pageTitle, children, check }) => {
 
     const data = useStaticQuery(graphql`
     query {
@@ -32,8 +32,8 @@ const Layout = ({ pageTitle, children }) => {
 
     
     <div className = {container}>
-       <Confetti/>
-        <header className = {siteTitle}>{data.site.siteMetadata.title}</header>
+       {!check &&  <Confetti/>
+       } <header className = {siteTitle}>{data.site.siteMetadata.title}</header>
       {/* <nav>
         <ul className={navLinks}>
           <div id = {horizontalunderLine}> </div>
